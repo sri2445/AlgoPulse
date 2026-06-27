@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoPulse | Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1 class="main-title">AlgoPulse</h1>
+        <p class="subtitle">Watch your code rearrange chaos into order, step by step.</p>
+        
+        <div class="controls-card">
+            <div class="input-group">
+                <label for="arrayInput">Enter Array Inputs</label>
+                <input type="text" id="arrayInput" value="50, 20, 80, 10, 60, 30" placeholder="e.g., 40, 10, 50, 20">
+            </div>
+            
+            <div class="input-group">
+                <label for="algoSelect">Select Algorithm</label>
+                <select id="algoSelect">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="merge">Merge Sort</option>
+                </select>
+            </div>
+            
+            <button class="btn-sort" onclick="startSorting()">Sort Now</button>
+        </div>
+
+        <div class="visualizer-stage">
+            <div id="container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

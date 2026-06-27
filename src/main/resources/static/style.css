@@ -1,0 +1,150 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #0f0c20 0%, #15102a 100%);
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --accent-color: #6c5ce7;
+    --accent-hover: #5b4cdb;
+    --text-main: #ffffff;
+    --text-muted: #a0aec0;
+    --bar-default: #3498db;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Bigger Title styling */
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0 0 5px 0;
+    letter-spacing: -1px;
+    background: linear-gradient(45deg, #a8ff78, #78ffd6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 10px 30px rgba(120, 255, 214, 0.2);
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Layout controls card */
+.controls-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 200px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.3);
+}
+
+.btn-sort {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    height: 48px;
+}
+
+.btn-sort:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+}
+
+/* Stage Area */
+.visualizer-stage {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 350px;
+    gap: 8px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.bar {
+    flex: 1;
+    max-width: 50px;
+    background: linear-gradient(180deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    
+}
