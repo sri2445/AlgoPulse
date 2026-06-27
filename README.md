@@ -17,3 +17,4 @@ An interactive, full-stack algorithm visualizer built with **Java (Spring Boot)*
 * **Frontend Layer:** HTML5, CSS3 (Modern Variables & Gradients), JavaScript (ES6+ Async/Await Engine).
 
 ---
+![image alt](https://github.com/sri2445/AlgoPulse/blob/main/Website_View.png?raw=true)
